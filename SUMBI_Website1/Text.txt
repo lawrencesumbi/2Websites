@@ -1,0 +1,23 @@
+.hero {
+      display: flex;
+      background-color: green;
+      padding: 50px 20px 5px;
+      max-width: 1200px;
+      margin: 0 auto 20px;
+      border-radius: 0 120px 120px 0;
+      position: relative;
+      gap: 40px;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      scroll-margin-top: 140px;
+    }
+
+
+#051367
+#051540;
+ #051367;
+
+<div class="hero-image-container" aria-hidden="true">
+        <img src="img/8dd9ab_13c0092a1b5740aeaff651617d767ca7~mv2.jpg" alt="">
+      </div>
