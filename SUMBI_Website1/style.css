@@ -209,9 +209,9 @@
     }
 
     /* Facebook icon button */
-    .fb-button {
-      background-color: #ff8c00;
-      padding: 8px 12px;
+    .web-button {
+      background-color: white;
+      padding: 3px 3px;
       border-radius: 4px;
       display: flex;
       align-items: center;
@@ -220,9 +220,9 @@
       color: white;
     }
 
-    .fb-button svg {
-      width: 18px;
-      height: 18px;
+    .web-button img {
+      width: 25px;
+      height: 25px;
     }
 
     #home {
@@ -402,7 +402,7 @@
 .about-text h2::after {
   content: '';
   display: block;
-  width: 60px;
+  width: 170px;
   height: 4px;
   background: #f76c6c; /* accent underline */
   margin-top: 8px;
@@ -420,6 +420,7 @@
   margin-bottom: 15px;
   line-height: 1.6;
   color: #444;
+  text-align: justify;
 }
 
 /* Button */
@@ -525,6 +526,302 @@
 
 .service-box .btn-learn-more:hover {
   background-color: #c0392b;
+}
+
+#projects {
+  background: #fff;
+  text-align: center;
+  padding: 60px 20px;
+  scroll-margin-top: 50px;
+}
+
+.projects-header h4 {
+  color: #f39c12;
+  font-weight: bold;
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+
+.projects-header h2 {
+  font-size: 50px;
+  font-weight: bold;
+  color: #f76c6c;
+  margin-bottom: 10px;
+}
+
+.projects-header p {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  color: #555;
+}
+
+.projects-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.projects-logos img {
+  max-height: 200px;
+  max-width: 400px;
+  object-fit: contain;
+  border-radius: 10px;
+  filter: grayscale(0%);
+  transition: all 0.3s ease;
+}
+
+.projects-logos img:hover {
+  filter: grayscale(100%);
+  transform: scale(1.05);
+}
+
+.projects-button .btn-view-more {
+  background-color: #f76c6c;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+  display: inline-block; /* ensures margin works properly */
+  margin-top: 5px;
+}
+
+.projects-button .btn-view-more:hover {
+  background-color: #f39c12;
+  color: #fff;
+}
+
+#contact {
+  background-color: rgb(224, 224, 224);
+  width: 100%;
+  padding: 50px 20px;
+  box-sizing: border-box;
+}
+
+.contact-container {
+  background: rgb(1, 85, 1);
+  color: white;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+.contact-container h4 span {
+  color: #ff9100;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.contact-container h2 {
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.contact-form .form-group {
+  margin-bottom: 20px;
+}
+
+.contact-form label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+  font-size: 14px;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form .form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.contact-form .form-row .form-group {
+  flex: 1;
+}
+
+.checkbox-group {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* better to use 1fr for equal width */
+  gap: 5px 20px; /* vertical and horizontal gap */
+  align-items: start;
+  justify-items: start;
+}
+
+.checkbox-group label {
+  display: flex;         /* make label a flex container */
+  align-items: center;   /* vertically center checkbox and text */
+  gap: 8px;              /* space between checkbox and text */
+  white-space: nowrap;   /* prevents line breaks */
+  font-size: 14px;
+  padding: 4px 0;
+  min-height: 30px;
+}
+
+.required {
+  color: red;
+}
+
+.contact-form button {
+  width: 100%;
+  background-color: #ff9100;
+  color: white;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.contact-form button:hover {
+  background-color: #e27c00;
+}
+
+/* LOCATION SECTION */
+#location {
+  background-color: #f4f4f4;
+  padding: 60px 20px;
+  font-family: Arial, sans-serif;
+  color: #333;
+  min-height: 25vh;
+}
+
+.location-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* LEFT: Logo + Text */
+.location-left {
+  flex: 1;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.location-left img {
+  max-width: 250px;
+  height: auto;
+  display: block;
+}
+
+.location-left p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* CENTER: Contact Details */
+.location-center {
+  flex: 1;
+  min-width: 250px;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.contact-item .icon {
+  font-size: 24px;
+  color: #051367;
+}
+
+.contact-item h4 {
+  color: gre;
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.contact-item p {
+  margin: 2px 0 0 0;
+  font-size: 14px;
+}
+
+/* RIGHT: Map */
+.location-right {
+  flex: 1;
+  min-width: 300px;
+}
+
+.map-container {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* FOOTER */
+#footer {
+  background-color: #161616;
+  color: #fff;
+  padding: 25px 0;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+}
+
+#footer p {
+  margin: 0;
+}
+
+/* Responsive: stack on smaller screens */
+@media (max-width: 900px) {
+  .location-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .location-left,
+  .location-center,
+  .location-right {
+    min-width: 100%;
+  }
+  .contact-item {
+    justify-content: center;
+  }
 }
 
 
