@@ -15,18 +15,24 @@
       <div>
         <img src="img/icons8-call-50.png" alt="CALL">
         <span><strong>CALL US</strong> 09753140724</span>
-      </div>
-      <div>
+      
+      
         <img src="img/icons8-email-50.png" alt="EMAIL">
         <span><strong>EMAIL US</strong> zlkconsultancy@gmail.com</span>
-      </div>
-      <div>
+      
         <img src="img/icons8-location-50.png" alt="LOCATION">
         <span><strong>ADDRESS</strong> Cebu City</span>
       </div>
     </div>
     <header>
+      
       <nav class="nav-bar container" role="navigation" aria-label="Primary Navigation">
+        <div class="logo-nav">
+        <img src="img/8dd9ab_9b269e06b92249b396838c4af8cda71f~mv2_d_7620_3514_s_4_2.jpg" alt="Logo">
+      </div>
+        <button class="hamburger" aria-label="Toggle menu">
+          ☰
+        </button>
         <ul class="nav-links">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About Us</a></li>
@@ -43,6 +49,8 @@
             <img src="img/icons8-internet-50.png" alt="">
           </a>
         </div>
+
+
       </nav>
     </header>
   </div>
@@ -268,5 +276,15 @@
       <p>Copyright © 2025 ZLK. All rights reserved.</p>
     </div>
   </footer>
+
+<script>
+  const hamburger = document.querySelector('.hamburger');
+  const navLinks = document.querySelector('.nav-links');
+
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+  });
+</script>
+
 </body>
 </html>
