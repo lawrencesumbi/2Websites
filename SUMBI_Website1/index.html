@@ -28,8 +28,8 @@
       
       <nav class="nav-bar container" role="navigation" aria-label="Primary Navigation">
         <div class="logo-nav">
-        <img src="img/8dd9ab_9b269e06b92249b396838c4af8cda71f~mv2_d_7620_3514_s_4_2.jpg" alt="Logo">
-      </div>
+          <img src="img/8dd9ab_9b269e06b92249b396838c4af8cda71f~mv2_d_7620_3514_s_4_2.jpg" alt="Logo">
+        </div>
         <button class="hamburger" aria-label="Toggle menu">
           ☰
         </button>
@@ -280,9 +280,18 @@
 <script>
   const hamburger = document.querySelector('.hamburger');
   const navLinks = document.querySelector('.nav-links');
+  const links = document.querySelectorAll('.nav-links a');
 
+  // Toggle menu on hamburger click
   hamburger.addEventListener('click', () => {
     navLinks.classList.toggle('show');
+  });
+
+  // Close menu when any link is clicked
+  links.forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks.classList.remove('show');
+    });
   });
 </script>
 
